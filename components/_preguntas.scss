@@ -1,0 +1,116 @@
+.prg {
+    &.hide{
+        display: none;
+    }
+    padding: 0px 5% ;
+    line-height: 2;
+    margin-bottom: 90px;
+        &__titulo{
+            @extend .txt;
+            margin: 5.5em 0 2em;
+        }
+        &__p {
+            margin-bottom: 1rem;
+        }
+        &__link{
+            cursor: pointer;
+            color: $coloraqua;
+            text-decoration: none ;
+            font-weight: bold;
+            &:hover{
+                color:   #ef8585;
+            }
+        }
+}
+.divProductos{
+    display: none;
+    &.hide{
+        display: block;
+    }
+}
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .answer {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  .question:before {
+    content: "+ ";
+  }
+  .active .question:before {
+    content: "- ";
+  }
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  
+.accordion {
+    width: 800px;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+  }
+  
+  .accordion .container {
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+  }
+  
+  .accordion .container.active .content {
+    height: 150px;
+  }
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
+  

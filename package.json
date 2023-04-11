@@ -1,0 +1,14 @@
+{
+  "name": "auris_js",
+  "version": "1.0.0",
+  "description": "somos Auris, un e-commerce que nos enfocamos a una amplia variedad de Auriculares",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass  components/style.scss ./css/style.css -w --no-source-map -s compressed"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
